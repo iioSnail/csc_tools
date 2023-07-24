@@ -2,4 +2,4 @@ torch
 transformers
 PyMuPDF
 python-docx
-streamlit
+streamlit==1.25.0

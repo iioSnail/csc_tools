@@ -36,6 +36,8 @@ def longtext_demo(model, max_length, only_chinese, *args, **kwargs):
 
         c1, c2 = st.columns([0.5, 0.5])
 
+        print("error_num", error_num)
+
         con1 = c1.expander("修改前", expanded=True)
         con2 = c2.expander("修改后（错字数量: :red[**%d**]）" % error_num, expanded=True)
 

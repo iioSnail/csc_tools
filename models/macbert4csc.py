@@ -22,7 +22,6 @@ class MacBert4CSC(CSCBaseModel):
         src_tokens = convert_sentence_to_tokens(sentence, self.tokenizer.get_vocab())
         inputs = self.tokenizer([src_tokens], return_tensors='pt', is_split_into_words=True).to(self.device)
         outputs = self.model(**inputs).logits
-        print("Device", outputs.device)
 
         pred_tokens = self.tokenizer.convert_ids_to_tokens(outputs.argmax(-1)[0, 1:-1])
         return pred_token_process(list(sentence), pred_tokens)

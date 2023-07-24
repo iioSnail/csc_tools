@@ -21,8 +21,14 @@ csc_tools是一个中文拼写纠错（Chinese Spell Checking / Chinese Spell Co
 ![文档校对](./images/doc_demo.png)
 
 
-# 项目部署
+# CSC模型
 
+目前支持的模型如下：
+
+- ChineseBertForCSC(SCOPE)（[Hugging Face](https://huggingface.co/iioSnail/ChineseBERT-for-csc), [Github](https://github.com/jiahaozhenbang/SCOPE), [论文](https://aclanthology.org/2022.emnlp-main.287/) ）：该模型源于对SCOPE论文的复现，几乎可以达到原论文的效果。
+- macbert4csc（[Hugging Face](https://huggingface.co/shibing624/macbert4csc-base-chinese), [Github](https://github.com/shibing624/pycorrector) ）: 该模型在Github上虽然关注度较高，但效果相对要差一点。
+
+# 项目部署
 
 1. 安装依赖：
 ```

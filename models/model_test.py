@@ -1,5 +1,5 @@
 # -*- coding: UTF-8 -*-
-
+from models.chinesebert import ChineseBertForCSC
 from models.macbert4csc import MacBert4CSC
 from utils.str_utils import split_sentence
 
@@ -18,7 +18,7 @@ def longtext_predict_test(model, paragraph, max_length=256):
     assert len(''.join(sentences)) == len(pred)
 
 def main():
-    model = MacBert4CSC()
+    model = ChineseBertForCSC()
 
     predict_test(model, "我喜欢吃平果")
     predict_test(model, "我喜欢吃“平果”※")

@@ -13,9 +13,6 @@ class ChineseBertForCSC(CSCBaseModel):
     def __init__(self, model_path="iioSnail/ChineseBERT-for-csc", device='cpu', *args, **kwargs):
         super(ChineseBertForCSC, self).__init__()
 
-        if os.path.exists(model_path):
-            model_path = model_path.replace("/", "\\")
-
         self.device = device
         self.tokenizer = AutoTokenizer.from_pretrained(model_path, trust_remote_code=True)
         self.model = AutoModel.from_pretrained(model_path, trust_remote_code=True)

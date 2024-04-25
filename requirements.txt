@@ -1,5 +1,6 @@
 torch
 transformers
+pypinyin
 PyMuPDF
 python-docx
 streamlit==1.25.0

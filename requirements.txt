@@ -3,4 +3,5 @@ transformers
 pypinyin
 PyMuPDF
 python-docx
+huggingface-hub==0.20.3
 streamlit==1.25.0

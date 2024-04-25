@@ -1,5 +1,11 @@
 # csc_tools
 
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/iioSnail/csc_tools/blob/master/colab.ipynb)
+
+
+
+# 项目介绍
+
 csc_tools是一个中文拼写纠错（Chinese Spell Checking / Chinese Spell Correction, CSC）工具箱，帮助人们利用已有模型方便的进行中文拼写纠错。
 
 > 中文拼写纠错仅针对错字进行修改，不处理多字和漏字的情况。
@@ -30,13 +36,32 @@ csc_tools是一个中文拼写纠错（Chinese Spell Checking / Chinese Spell Co
 
 # 项目部署
 
-1. 安装依赖：
+1.下载项目并安装依赖：
+
 ```
-pip install -r requirments.txt
+git clone https://github.com/iioSnail/csc_tools.git
+cd csc_tools
+pip install -r requirements.txt
 ```
 
-2. 运行`streamlit_demo.py`
+2.运行`streamlit_demo.py`
+
 ```
 streamlit run streamlit_demo.py
+```
+
+运行后会从huggingface下载模型，国内会由于网络问题加载失败，可手动下载后放到项目目录下。下载后的目录如下：
+
+```
+├── csc_tools
+    ├── iioSnail  # 模型文件
+    │   └── ChineseBERT-for-csc
+    ├── shibing624  # 模型文件
+    │   └── macbert4csc-base-chinese
+    ├── images
+    ├── models
+    ├── st_pages
+    ├── tmp
+    └── utils
 ```
 

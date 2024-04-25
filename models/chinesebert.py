@@ -15,7 +15,7 @@ class ChineseBertForCSC(CSCBaseModel):
 
         self.device = device
         self.tokenizer = AutoTokenizer.from_pretrained(model_path, trust_remote_code=True)
-        self.model = AutoModel.from_pretrained(model_path, trust_remote_code=True)
+        self.model = AutoModel.from_pretrained(model_path, trust_remote_code=True).to(self.device)
 
     def predict(self, sentence):
         src_tokens = convert_sentence_to_tokens(sentence, self.tokenizer.get_vocab())

@@ -2,6 +2,8 @@
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/iioSnail/csc_tools/blob/master/colab.ipynb)
 
+[AutoDL镜像](https://www.codewithgpu.com/i/iioSnail/csc_tools/csc_tools)
+
 
 
 # 项目介绍
@@ -65,3 +67,4 @@ streamlit run streamlit_demo.py
     └── utils
 ```
 
+> 如果你在部署过程中遇到任何问题，可以提issue。首次部署推荐选用 [Google Colab](https://colab.research.google.com/github/iioSnail/csc_tools/blob/master/colab.ipynb) 或 [AutoDL](https://www.codewithgpu.com/i/iioSnail/csc_tools/csc_tools) 进行部署
